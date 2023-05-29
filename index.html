@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Отдых в Седоне</title>
   </head>
   <body>
@@ -49,7 +49,7 @@
             </a>
           </li>
         </ul>
-        <a class="booking-hotel">
+        <a href="#" class="booking-hotel">
           Хочу сюда!
         </a>
       </nav>
@@ -59,11 +59,12 @@
         <h1 class="visually-hidden">
           Отдых в Седоне
         </h1>
+        <img src="images/background/index-background.jpg" width="1200" height="485" alt="Добро пожаловать в Седону">
         <h2 class="hero-subtitle">
           Седона — небольшой городок в Аризоне,
           заслуживающий большего!
         </h2>
-        <p>
+        <p class="hero-description">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </section>
@@ -71,50 +72,58 @@
         <h2 class="visually-hidden">
           Преимущества
         </h2>
-        <h3 class="advantages-subtitle">
-          Настоящий городок
-        </h3>
-        <p class="advantages-description">
-          Седона — не аттракцион для туристов, там течёт своя жизнь
-        </p>
-        <img src="images/advanteges/advantages-gallery-1.jpg" width="800" height="385" alt="Улица Седоны">
+        <div class="advantages-content-container">
+          <div class="advantages-text-wrapp">
+            <h3 class="advantages-subtitle">
+              Настоящий городок
+            </h3>
+            <p class="advantages-description">
+              Седона — не аттракцион для туристов, там течёт своя жизнь
+            </p>
+          </div>
+          <img src="images/advanteges/advantages-gallery-1.jpg" width="800" height="385" alt="Улица Седоны">
+        </div>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-subtitle">
+            <h3 class="advantages-subtitle-detail">
               Небольшая
               площадь
             </h3>
-            <p class="advantages-description">
+            <p class="advantages-description-detail">
               Все достопримечательности находятся очень близко
             </p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-subtitle">
+            <h3 class="advantages-subtitle-detail">
               Красивая
               дорога
             </h3>
-            <p class="advantages-description">
+            <p class="advantages-description-detail">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-subtitle">
+            <h3 class="advantages-subtitle-detail">
               Мало
               туристов
             </h3>
-            <p class="advantages-description">
+            <p class="advantages-description-detail">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
         </ul>
-        <img src="images/advanteges/advantages-gallery-2.jpg" width="800" height="385"  alt="Мост Дьявола">
-        <h3 class="advantages-subtitle">
-          Там есть
-          мост дьявола
-        </h3>
-        <p class="advantages-description">
-          Да, по нему можно пройти! Если вы осмелитесь, разумеется
-        </p>
+        <div class="advantages-content-container">
+          <img src="images/advanteges/advantages-gallery-2.jpg" width="800" height="385"  alt="Мост Дьявола">
+          <div class="advantages-text-wrapp">
+            <h3 class="advantages-subtitle">
+              Там есть
+              мост дьявола
+            </h3>
+            <p class="advantages-description">
+              Да, по нему можно пройти! Если вы осмелитесь, разумеется
+            </p>
+          </div>
+        </div>
       </section>
       <section class="additional-advantages">
         <h2 class="additional-advantages-title">

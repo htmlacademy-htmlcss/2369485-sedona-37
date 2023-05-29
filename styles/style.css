@@ -16,4 +16,97 @@
 
 body{
   font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;;
+}
+
+/* Header */
+
+.page-header{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Navigation */
+
+.navigation-list{
+  list-style: none;
+}
+
+.navigation-user{
+  list-style: none;
+}
+
+.navigation-link{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+}
+
+.booking-hotel{
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* Hero */
+
+.hero-subtitle{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hero-description{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* Advantages */
+
+.advantages-subtitle{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.advantages-description{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.advantages-text-wrapp{
+  background-color: #82B3D3;
+}
+
+.advantages-item{
+  list-style: none;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-subtitle-detail{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-description-detail{
+  text-align: center;
 }
