@@ -110,3 +110,95 @@ body{
 .advantages-description-detail{
   text-align: center;
 }
+
+/* Additional-advantages */
+
+.additional-advantages-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.additional-advantages-desctiption{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.additional-advantages-list{
+  list-style: none;
+}
+
+.additional-advantages-subtitle{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Search-hotel */
+
+.search-hoter-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-hotel-description{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.search-hotel-btn{
+  background-color: #756157;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* Subscribe */
+
+.subscribe{
+  background-image: url(../images/subscribe-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.subscribe-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subscribe-description{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Footer */
+
+.social-list{
+  list-style: none;
+}
+
+.contact-phone-link{
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
