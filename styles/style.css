@@ -39,6 +39,16 @@ body{
   list-style: none;
 }
 
+.search-navigation{
+  background-image: url(../images/navigation/search.svg);
+  background-repeat: no-repeat;
+}
+
+.favorite-navigation{
+  background-image: url(../images/navigation/favorites.svg);
+  background-repeat: no-repeat;
+}
+
 .navigation-link{
   font-weight: 700;
   font-size: 20px;
@@ -201,4 +211,144 @@ body{
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+/* CATALOG PAGE */
+
+.filter-background-wrapp{
+  background-image: url(../images/background/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px 100%;
+}
+
+/* Header Catalog */
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-link{
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.home-page::after{
+  position: absolute;
+  background-image: url(../images/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  content: '';
+  width: 7px;
+  height: 10px;
+}
+
+/* Filter products */
+
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.catalog-filter-list{
+  list-style: none;
+}
+
+.control{
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.button-apply {
+  background-color: #82B3D3;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button-remove {
+  background-color: initial;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* Searching results */
+
+.searching-results-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+}
+.button {
+}
+.button-grid {
+}
+.button-list {
+}
+.button-single {
+}
+.product-list {
+}
+.product-card {
+}
+.product-card-link {
+}
+.product-card-image {
+}
+.product-card-title {
+}
+.product-card-price {
+}
+.product-card-button {
+}
+.product-card-rating {
+}
+.pagination {
+}
+.pagination-item {
+}
+.pagination-link {
+}
+.pagination-current {
+}
+.pagination-show-more {
+}
+.show-all-pages {
+}
+.subscribe {
+}
+.subscribe-title {
+}
+.subscribe-description {
+}
+.subscribe-mailing-btn {
+}
+.page-footer {
+}
+.footer-social-link {
+}
+.social-list {
+}
+.social-item {
+}
+.copyright {
 }
