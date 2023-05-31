@@ -1,0 +1,463 @@
+@font-face {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Header */
+
+.page-header{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Navigation */
+
+.navigation-list{
+  list-style: none;
+}
+
+.navigation-user{
+  list-style: none;
+}
+
+.search-navigation{
+  background-image: url(../images/navigation/search.svg);
+  background-repeat: no-repeat;
+}
+
+.favorite-navigation{
+  background-image: url(../images/navigation/favorites.svg);
+  background-repeat: no-repeat;
+}
+
+.navigation-link{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+}
+
+.booking-hotel{
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* Hero */
+
+.hero-subtitle{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hero-description{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* Advantages */
+
+.advantages-subtitle{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.advantages-description{
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.advantages-text-wrapp{
+  background-color: #82B3D3;
+}
+
+.advantages-item{
+  list-style: none;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-subtitle-detail{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-description-detail{
+  text-align: center;
+}
+
+/* Additional-advantages */
+
+.additional-advantages-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.additional-advantages-desctiption{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.additional-advantages-list{
+  list-style: none;
+}
+
+.additional-advantages-subtitle{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Search-hotel */
+
+.search-hoter-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-hotel-description{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.search-hotel-btn{
+  background-color: #756157;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* Subscribe */
+
+.subscribe{
+  background-image: url(../images/subscribe-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.subscribe-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subscribe-description{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Footer */
+
+.social-list{
+  list-style: none;
+}
+
+.contact-phone-link{
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.social-link{
+  display: block;
+}
+
+.vk{
+  background-image: url(../images/social-media/social-vk.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 15px;
+}
+
+.telegram{
+  background-image: url(../images/social-media/social-telegram.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 15px;
+}
+
+.youtube{
+  background-image: url(../images/social-media/social-youtube.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 18px;
+}
+
+/* CATALOG PAGE */
+
+.filter-background-wrapp{
+  background-image: url(../images/background/filter-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px 100%;
+}
+
+/* Header Catalog */
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-link{
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.home-page::after{
+  position: absolute;
+  background-image: url(../images/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  content: '';
+  width: 7px;
+  height: 10px;
+}
+
+/* Filter products */
+
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.catalog-filter-list{
+  list-style: none;
+}
+
+.control{
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.button-apply {
+  background-color: #82B3D3;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button-remove {
+  background-color: initial;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* Searching results */
+
+.searching-results-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
+.button-grid {
+  background-color: #FFFFFF;
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/directory-layout/icon-grid-layout-cards.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+.button-list {
+  background-color: #FFFFFF;
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/directory-layout/icon-single-layout-cards.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+.button-single {
+  background-color: #FFFFFF;
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/directory-layout/icon-list-layout-cards.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-link{
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.product-card-link{
+  background-color: #756157;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.product-card-button {
+  background-color: #82B3D3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.active-button{
+  background-color: #7DB54F;
+}
+
+.product-card-rating {
+  background-color:  #F2F2F2;;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rating-star-wrapp{
+  display: inline;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-link {
+  text-decoration: none;
+  background-color: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.pagination-current {
+  background-color: #F2F2F2;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.show-all-pages {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.subscribe-catalog{
+  background-color: #FFFFFF;
+}
+.subscribe-title-catalog{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.subscribe-description-catalog{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
