@@ -19,7 +19,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #FFFFFF;;
+  background-color: #F2F2F2;
 }
 
 .visually-hidden {
@@ -83,6 +83,14 @@ body{
 
 
 /* Hero */
+
+.main-index{
+  background-color: #FFFFFF;
+}
+
+.main-inner{
+  background-color: #FFFFFF;
+}
 
 .hero-subtitle{
   font-size: 30px;
@@ -211,6 +219,10 @@ body{
 }
 
 /* Footer */
+
+.page-footer{
+  background-color: #FFFFFF;
+}
 
 .social-list{
   list-style: none;
