@@ -226,6 +226,31 @@ body{
   text-decoration: none;
 }
 
+.social-link{
+  display: block;
+}
+
+.vk{
+  background-image: url(../images/social-media/social-vk.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 15px;
+}
+
+.telegram{
+  background-image: url(../images/social-media/social-telegram.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 15px;
+}
+
+.youtube{
+  background-image: url(../images/social-media/social-youtube.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 18px;
+}
+
 /* CATALOG PAGE */
 
 .filter-background-wrapp{
@@ -386,6 +411,10 @@ body{
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.rating-star-wrapp{
+  display: inline;
 }
 
 .pagination {
