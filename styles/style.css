@@ -242,7 +242,7 @@ body{
   display: block;
 }
 
-.vk{
+.vk, .telegram, .youtube{
   background-image: url(../images/social-media/social-vk.svg);
   background-repeat: no-repeat;
   width: 24px;
@@ -251,15 +251,10 @@ body{
 
 .telegram{
   background-image: url(../images/social-media/social-telegram.svg);
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 15px;
 }
 
 .youtube{
   background-image: url(../images/social-media/social-youtube.svg);
-  background-repeat: no-repeat;
-  width: 24px;
   height: 18px;
 }
 
@@ -347,7 +342,7 @@ body{
 }
 
 
-.button-grid {
+.button-grid, .button-list, .button-single{
   background-color: #FFFFFF;
   width: 48px;
   height: 48px;
@@ -358,24 +353,10 @@ body{
   border-radius: 4px;
 }
 .button-list {
-  background-color: #FFFFFF;
-  width: 48px;
-  height: 48px;
   background-image: url(../images/directory-layout/icon-single-layout-cards.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #000000;
-  border-radius: 4px;
 }
 .button-single {
-  background-color: #FFFFFF;
-  width: 48px;
-  height: 48px;
   background-image: url(../images/directory-layout/icon-list-layout-cards.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .product-list {
