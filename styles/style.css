@@ -432,10 +432,6 @@ body{
   text-transform: uppercase;
 }
 
-.rating-star-wrapp{
-  display: inline;
-}
-
 .pagination {
   list-style: none;
 }
