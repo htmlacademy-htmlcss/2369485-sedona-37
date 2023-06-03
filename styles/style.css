@@ -19,7 +19,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #FFFFFF;;
+  background-color: #FFFFFF;
 }
 
 .visually-hidden {
@@ -83,6 +83,40 @@ body{
 
 
 /* Hero */
+
+.main-index{
+  background-color: #FFFFFF;
+}
+
+.main-inner{
+  background-color: #FFFFFF;
+}
+
+.hero-images{
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+}
+
+.hero-images-wrapp{
+  position: relative;
+  background-image: url(../images/background/index-background.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+.hero-images-wrapp::before{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 1200px;
+  height: 57px;
+  background-image: url(../images/background/decoration-bg.svg);
+  background-repeat: no-repeat;
+}
 
 .hero-subtitle{
   font-size: 30px;
@@ -212,6 +246,10 @@ body{
 
 /* Footer */
 
+.page-footer{
+  background-color: #FFFFFF;
+}
+
 .social-list{
   list-style: none;
 }
@@ -230,7 +268,7 @@ body{
   display: block;
 }
 
-.vk{
+.vk, .telegram, .youtube{
   background-image: url(../images/social-media/social-vk.svg);
   background-repeat: no-repeat;
   width: 24px;
@@ -239,15 +277,10 @@ body{
 
 .telegram{
   background-image: url(../images/social-media/social-telegram.svg);
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 15px;
 }
 
 .youtube{
   background-image: url(../images/social-media/social-youtube.svg);
-  background-repeat: no-repeat;
-  width: 24px;
   height: 18px;
 }
 
@@ -335,7 +368,7 @@ body{
 }
 
 
-.button-grid {
+.button-grid, .button-list, .button-single{
   background-color: #FFFFFF;
   width: 48px;
   height: 48px;
@@ -346,24 +379,10 @@ body{
   border-radius: 4px;
 }
 .button-list {
-  background-color: #FFFFFF;
-  width: 48px;
-  height: 48px;
   background-image: url(../images/directory-layout/icon-single-layout-cards.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #000000;
-  border-radius: 4px;
 }
 .button-single {
-  background-color: #FFFFFF;
-  width: 48px;
-  height: 48px;
   background-image: url(../images/directory-layout/icon-list-layout-cards.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .product-list {
@@ -411,10 +430,6 @@ body{
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.rating-star-wrapp{
-  display: inline;
 }
 
 .pagination {
