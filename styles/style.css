@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100%;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -35,6 +43,22 @@ body{
   overflow: hidden;
 }
 
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-footer-container{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+.main-container{
+  flex-grow: 1;
+}
+
 /* Header */
 
 .page-header{
@@ -44,22 +68,42 @@ body{
 
 /* Navigation */
 
+.navigation{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
 .navigation-list{
+  width: 400px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .navigation-user{
+  width: 100px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
   list-style: none;
 }
 
 .search-navigation{
+  display: block;
   background-image: url(../images/navigation/search.svg);
   background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .favorite-navigation{
+  display: block;
   background-image: url(../images/navigation/favorites.svg);
   background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .navigation-link{
@@ -84,11 +128,7 @@ body{
 
 /* Hero */
 
-.main-index{
-  background-color: #FFFFFF;
-}
-
-.main-inner{
+.main-index, .main-inner{
   background-color: #FFFFFF;
 }
 
@@ -102,7 +142,8 @@ body{
   position: relative;
   background-image: url(../images/background/index-background.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
+  background-size: cover;
+  width: 100%;
   height: 485px;
 }
 
@@ -110,12 +151,11 @@ body{
   position: absolute;
   content: '';
   bottom: 0;
-  left: 0;
-  right: 0;
-  width: 1200px;
-  height: 57px;
+  width: 100%;
+  height: 6vh;
   background-image: url(../images/background/decoration-bg.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-subtitle{
@@ -147,12 +187,26 @@ body{
   color: #FFFFFF;
 }
 
+.advantages-content-container{
+  display: flex;
+  justify-content: space-between;
+}
+
 .advantages-text-wrapp{
+  width: 400px;
+  padding: 100px 85px;
   background-color: #82B3D3;
 }
 
-.advantages-item{
+.advantages-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.advantages-item{
+  width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -166,6 +220,10 @@ body{
 
 .advantages-description-detail{
   text-align: center;
+}
+
+.diff-bg{
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 /* Additional-advantages */
@@ -185,7 +243,19 @@ body{
 }
 
 .additional-advantages-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.additional-advantages-item{
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.differ{
+  background-color: #FFFFFF;
 }
 
 .additional-advantages-subtitle{
@@ -197,6 +267,14 @@ body{
 }
 
 /* Search-hotel */
+
+.search-hotel-container{
+  width: 592px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
 
 .search-hoter-title{
   font-size: 30px;
