@@ -381,9 +381,11 @@ body{
 /* CATALOG PAGE */
 
 .filter-background-wrapp{
+  padding:70px;
+  padding-top: 35px;
   background-image: url(../images/background/filter-background.jpg);
   background-repeat: no-repeat;
-  background-size: 1200px 100%;
+  background-size: cover;
 }
 
 /* Header Catalog */
@@ -416,8 +418,8 @@ body{
   background-image: url(../images/breadcrumbs-arrow.svg);
   background-repeat: no-repeat;
   content: '';
-  left: 19.5%;
-  top: 16.4%;
+  left: 23.1%;
+  top: 20.1%;
   width: 7px;
   height: 10px;
 }
@@ -429,7 +431,6 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 1060px;
-  padding: 0 70px;
 }
 
 .catalog-filter-title {
