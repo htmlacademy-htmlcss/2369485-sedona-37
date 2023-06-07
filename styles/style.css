@@ -16,18 +16,21 @@
 
 html{
   height: 100%;
+  background-color: #F2F2F2;
 }
 
 body{
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin: 0;
   min-height: 100%;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -124,6 +127,10 @@ body{
 
 .main-index, .main-inner{
   background-color: #FFFFFF;
+}
+
+.hero-wrapper{
+  padding: 69px 274.5px;
 }
 
 .hero-images{
@@ -223,6 +230,10 @@ body{
 
 /* Additional-advantages */
 
+.advantages-hero-wrapper{
+  padding: 64px 347.5px;
+}
+
 .additional-advantages-title{
   font-size: 30px;
   line-height: 36px;
@@ -264,6 +275,10 @@ body{
 
 /* Search-hotel */
 
+.searching-results{
+  padding: 0 70px;
+}
+
 .search-hotel-container{
   width: 592px;
   padding: 96px 304px;
@@ -288,6 +303,7 @@ body{
 }
 
 .search-hotel-btn{
+  font-family: 'PT Sans';
   background-color: #756157;
   border-radius: 4px;
   font-weight: 700;
@@ -572,6 +588,7 @@ body{
 }
 
 .product-card-button {
+  font-family: 'PT Sans';
   background-color: #82B3D3;
   font-weight: 700;
   font-size: 16px;
@@ -582,6 +599,7 @@ body{
 }
 
 .active-button{
+  font-family: 'PT Sans';
   background-color: #7DB54F;
 }
 
@@ -636,6 +654,7 @@ body{
 }
 
 .show-all-pages {
+  font-family: 'PT Sans';
   font-size: 22px;
   line-height: 26px;
   text-align: center;
