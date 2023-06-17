@@ -77,6 +77,7 @@ body{
   flex-wrap: wrap;
   width: 400px;
   margin: 0;
+  margin-left: 28px;
   padding: 0;
   list-style: none;
 }
@@ -103,7 +104,7 @@ body{
   padding: 22px 12px;
   background-image: url(../images/navigation/search.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:20% center;
   min-width: 20px;
   min-height: 20px;
 }
@@ -154,7 +155,6 @@ body{
 
 .hero-wrapper{
   padding: 69px 274.5px;
-  margin-bottom: 21px;
 }
 
 .hero-images{
@@ -225,14 +225,14 @@ body{
 .advantages-text-wrapp{
   position: relative;
   width: 400px;
-  padding: 93px 85px;
+  padding: 102px 85px;
   background-color: #82B3D3;
 }
 
 .advantages-text-wrapp::after{
   position: absolute;
   content: '';
-  top: 180px;
+  top: 188px;
   left: 170px;
   width: 60px;
   height: 2px;
@@ -290,6 +290,8 @@ body{
 }
 
 .additional-advantages-title{
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -298,6 +300,7 @@ body{
 }
 
 .additional-advantages-desctiption{
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -313,7 +316,7 @@ body{
 .housing::before{
   position: absolute;
   content: '';
-  top: 111px;
+  top: 80px;
   background-image: url(../images/advanteges/advantage-icon-home.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -324,7 +327,7 @@ body{
 .food::before{
   position: absolute;
   content: '';
-  top: 113px;
+  top: 81px;
   left: 40.5%;
   background-image: url(../images/advanteges/advantage-icon-burger.svg);
   background-repeat: no-repeat;
@@ -336,7 +339,7 @@ body{
 .souvenirs::before{
   position: absolute;
   content: '';
-  top: 107px;
+  top: 78px;
   left: 42%;
   background-image: url(../images/advanteges/advantage-icon-box.svg);
   background-repeat: no-repeat;
@@ -349,7 +352,7 @@ body{
 .additional-advantages-item{
   position: relative;
   width: 400px;
-  padding: 183px 85px 81px 85px;
+  padding: 152px 83px 60px 86px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -367,7 +370,7 @@ body{
 }
 
 .additional-advantage-item-desc{
-  width: 230px;
+  width: 228px;
   text-align: center;
 }
 
@@ -379,14 +382,14 @@ body{
 
 .search-hotel-container{
   width: 592px;
-  padding: 96px 304px;
+  padding: 99px 304px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
 }
 
-.search-hoter-title{
+.search-hotel-title{
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 30px;
@@ -433,8 +436,7 @@ body{
 
 .subscribe-container{
   display: flex;
-  padding: 96px 258px 104px 258px;
-  padding-top: 96px;
+  padding: 96px 258px 105px 258px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -452,11 +454,54 @@ body{
 .subscribe-description{
   width: 475px;
   margin-top: 0;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.mail{
+  display: grid;
+  grid-template-columns: 452px 232px;
+}
+
+.input-mail{
+  width: 410px;
+  margin: 0;
+  padding: 20px 22px 17px 20px;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.input-mail::placeholder{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.button-mail{
+  margin: 0;
+  background: #82B3D3;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
+  border: none;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-mail:hover{
+  cursor: pointer;
 }
 
 /* Footer */
@@ -486,7 +531,6 @@ body{
 .contact-phone-link{
   font-style: normal;
   font-size: 40px;
-  line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -501,18 +545,20 @@ body{
 .vk, .telegram, .youtube{
   background-image: url(../images/social-media/social-vk.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 41% center;
   width: 24px;
-  height: 15px;
+  height: 12px;
 }
 
 .telegram{
   background-image: url(../images/social-media/social-telegram.svg);
+  background-position: 24% center;
 }
 
 .youtube{
   background-image: url(../images/social-media/social-youtube.svg);
-  height: 18px;
+  height: 12px;
+  background-position: left center;
 }
 
 /* CATALOG PAGE */
