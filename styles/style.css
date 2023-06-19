@@ -135,6 +135,7 @@ body{
 }
 
 .booking-hotel{
+  display: inline-block;
   padding: 8px 34px;
   font-size: 16px;
   line-height: 20px;
@@ -146,6 +147,22 @@ body{
   text-transform: uppercase;
 }
 
+.booking-hotel:hover{
+  background-color: #615048;
+}
+
+.booking-hotel:focus{
+  background-color: #615048;
+}
+
+.booking-hotel:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.booking-hotel:disabled{
+  background-color: #E5E5E5;
+}
 
 /* Hero */
 
@@ -382,7 +399,7 @@ body{
 
 .search-hotel-container{
   width: 592px;
-  padding: 99px 304px;
+  padding: 97.5px 304px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -420,10 +437,24 @@ body{
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
-.search-hotel-btn{
-  cursor: pointer;
+.search-hotel-btn:hover{
+  background-color: #615048;
+}
+
+.search-hotel-btn:focus{
+  background-color: #615048;
+}
+
+.search-hotel-btn:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.search-hotel-btn:disabled{
+  background-color: #E5E5E5;
 }
 
 /* Subscribe */
@@ -432,18 +463,19 @@ body{
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .subscribe-container{
   display: flex;
-  padding: 96px 258px 105px 258px;
+  padding: 96px 258px 106px 258px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .subscribe-title{
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
@@ -453,7 +485,7 @@ body{
 
 .subscribe-description{
   width: 475px;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 52px;
   font-size: 22px;
   line-height: 26px;
@@ -462,14 +494,13 @@ body{
 }
 
 .mail{
-  display: grid;
-  grid-template-columns: 452px 232px;
+  display: flex;
 }
 
 .input-mail{
   width: 410px;
   margin: 0;
-  padding: 20px 22px 17px 20px;
+  padding: 23px 22px 16px 20px;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: none;
@@ -498,10 +529,24 @@ body{
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button-mail:hover{
-  cursor: pointer;
+  background-color: #68A2CA;
+}
+
+.button-mail:focus{
+  background-color: #68A2CA;
+}
+
+.button-mail:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button-mail:disabled{
+  background-color: #E5E5E5;
 }
 
 /* Footer */
@@ -516,12 +561,13 @@ body{
   align-items: center;
   width: 1060px;
   margin: 0 auto;
-  padding: 45px 70px 35px 70px;
+  padding: 40px 70px 30px 70px;
 }
 
 .social-list{
   display: flex;
-  width: 200px;
+  align-items: center;
+  width: 156px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -529,37 +575,68 @@ body{
 }
 
 .contact-phone-link{
+  display: block;
+  margin: 0;
+  padding: 14px 12px 14px 0;
   font-style: normal;
   font-size: 40px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
 }
 
-.social-link{
-  display: block;
-  padding: 13px 15px;
+.contact-phone-link:hover{
+    color: #756157;
 }
 
-.vk, .telegram, .youtube{
-  background-image: url(../images/social-media/social-vk.svg);
-  background-repeat: no-repeat;
-  background-position: 41% center;
-  width: 24px;
-  height: 12px;
+.contact-phone-link:focus{
+  color: #756157;
+}
+
+.contact-phone-link:active{
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.social-link{
+  display: block;
+}
+
+.social-link-images:hover{
+  fill: #68A2CA;
+}
+
+.social-link-images:focus{
+  fill: #68A2CA;
+}
+
+.social-link-images:active{
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.vk{
+  padding: 13px 11.67px;
 }
 
 .telegram{
-  background-image: url(../images/social-media/social-telegram.svg);
-  background-position: 24% center;
+  padding: 12px 14.67px 12.9px 14.67px;
 }
 
 .youtube{
-  background-image: url(../images/social-media/social-youtube.svg);
-  height: 12px;
-  background-position: left center;
+  padding: 11.5px 12.67px;
 }
+
+.copyright:hover{
+  fill: #756157;
+}
+
+.copyright:focus{
+  fill: #756157;
+}
+
+.copyright:active{
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 
 /* CATALOG PAGE */
 
@@ -600,6 +677,23 @@ body{
   font-weight: 400;
   font-size: 16px;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+.breadcrumbs-link-home:hover{
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link-home:active{
+  fill: (255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:hover{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active{
+  color: (255, 255, 255, 0.3);
 }
 
 .breadcrumbs-list::after{
@@ -686,16 +780,52 @@ body{
   color: #FFFFFF;
 }
 
+.button-apply:hover{
+  background-color: #68A2CA;
+}
+
+.button-apply:focus{
+  background-color: #68A2CA;
+}
+
+.button-apply:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button-apply:disabled{
+  background-color: #E5E5E5;
+}
+
 .button-remove {
   padding: 8px 50px;
   border: none;
   background-color: initial;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.button-remove:hover{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-remove:focus{
+  outline-style: solid;
+  outline-color: #83B3D3;
+  outline-width: 3px;
+}
+
+.button-remove:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-remove:disabled{
+  opacity: 0.1
 }
 
 /* Searching results */
@@ -718,9 +848,25 @@ body{
 }
 
 .select-control{
+  border-radius: 4px;
   width: 292px;
   margin-left: auto;
   margin-right: 70px;
+}
+
+.select-control:hover{
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus{
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #68A2CA;
+}
+
+.select-control:disabled{
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .card-layout-wrapper{
@@ -745,6 +891,27 @@ body{
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
+
+.button-grid:hover,
+.button-list:hover,
+.button-single:hover{
+  border: 2px solid #000000;
+}
+
+.button-grid:focus,
+.button-list:focus,
+.button-single:focus{
+  outline-color: #68A2CA;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.button-grid:active,
+.button-list:active,
+.button-single:active{
+  border: 2px solid #000000;
+}
+
 
 .button-list {
   background-image: url(../images/directory-layout/icon-single-layout-cards.svg);
@@ -817,6 +984,7 @@ body{
 }
 
 .product-card-link{
+  display: inline-block;
   padding: 8px 26px;
   border-radius: 4px;
   border: none;
@@ -876,8 +1044,8 @@ body{
 }
 
 .pagination-link {
+  display: inline-block;
   border-radius: 4px;
-  display: block;
   margin: 0;
   padding: 12px 24px;
   text-decoration: none;
