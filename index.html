@@ -46,6 +46,7 @@
               <span class="visually-hidden">
                 Избранное
               </span>
+              <span class="number-favorites">12</span>
             </a>
           </li>
         </ul>
@@ -219,5 +220,58 @@
         </a>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-booking">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group thr">
+              <label class="subtitle-booking-check" for="booking-check">Дата заезда:</label>
+              <input class="booking-form-field field" type="date" id="booking-check" name="booking-check">
+              <span class="date-input">27 апреля 2020</span>
+            </p>
+            <span class="error-date">Мы не можем отправить вас в прошлое.</span>
+            <p class="field-group">
+                <label class="subtitle-booking-check" for="booking-departure">Дата выезда:</label>
+              <input class="booking-form-field field" type="date" id="booking-departure" name="booking-departure">
+              <span class="date-input-departure">1 сентября 2023</span>
+            </p>
+            <span class="free-room">На эти даты есть свободные номера. Пока есть.</span>
+            <div class="number-booking-wrapp">
+              <p class="field-group auth-form-user-options">
+                <label class="booking-form-input control">
+                  <span class="control-label">Взрослые:</span>
+                  <button class="negative-button" type="button"></button>
+                  <button class="plus-button" type="button"></button>
+                  <input class="number-passenger" type="number" value="2" name="firm-storе">
+                </label>
+              </p>
+              <p class="field-group auth-form-user-options">
+                <span class="form-label">
+                  <label class="booking-form-input control">
+                  <span class="control-label children">Дети:</span>
+                  <button class="negative-button-child" type="button"></button>
+                  <button class="plus-button-child" type="button"></button>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
+                        </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                  <input class="number-passenger" value="2" type="number" name="firm-storе">
+                </label>
+                </span>
+              </p>
+           </div>
+            <a class="booking-form-search" href="#">Найти</a>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
