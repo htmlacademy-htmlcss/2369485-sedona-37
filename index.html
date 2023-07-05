@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="16x16" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -62,7 +63,7 @@
             Отдых в Седоне
           </h1>
           <div class="hero-images-wrapp">
-            <img class="hero-images" src="images/welcome-sedona-hero.svg" width="457" height="352" alt="Добро пожаловать в великолепную Седону, &#171;Потому что Гранд-Каньон отстой!&#187;">
+            <img class="hero-images" src="images/welcome-sedona-hero.svg" width="457" height="352" alt="Добро пожаловать в великолепную Седону, 'Потому что Гранд-Каньон отстой!'">
           </div>
         </section>
         <section class="advantages">
@@ -168,7 +169,7 @@
             </p>
             <form class="mail" action="https://echo.htmlacademy.ru/" method="get">
               <input class="input-mail" name="subscribe-mail" type="email" placeholder="Ваш e-mail">
-              <input class="button-mail" type="submit" class="subscribe-mailing-btn" value="Подписаться">
+              <input class="button-mail" type="submit" value="Подписаться">
             </form>
           </div>
         </section>
@@ -220,50 +221,73 @@
         </a>
       </div>
     </footer>
-    <div class="modal-container modal-container-close">
-      <div class="modal modal-booking">
+    <div class="modal-container hidden">
+      <div class="modal modal-booking modal-container-close">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="black"/>
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group thr">
               <label class="subtitle-booking-check" for="booking-check">Дата заезда:</label>
-              <input class="booking-form-field field" type="date" id="booking-check" name="booking-check">
-              <span class="date-input">27 апреля 2020</span>
+              <input class="booking-form-field field" value="27 апреля 2020" type="text" id="booking-check" name="booking-check">
+              <button class="booking-button-calendar" type="button"></button>
             </p>
             <span class="error-date">Мы не можем отправить вас в прошлое.</span>
             <p class="field-group">
                 <label class="subtitle-booking-check" for="booking-departure">Дата выезда:</label>
-              <input class="booking-form-field field" type="date" id="booking-departure" name="booking-departure">
-              <span class="date-input-departure">1 сентября 2023</span>
+              <input class="booking-form-field" value="1 сентября 2023" type="text" id="booking-departure" name="booking-departure">
+              <button class="booking-button-calendar" type="button"></button>
             </p>
             <span class="free-room">На эти даты есть свободные номера. Пока есть.</span>
             <div class="number-booking-wrapp">
               <p class="field-group auth-form-user-options">
                 <label class="booking-form-input control">
                   <span class="control-label">Взрослые:</span>
-                  <button class="negative-button" type="button"></button>
-                  <button class="plus-button" type="button"></button>
                   <input class="number-passenger" type="number" value="2" name="firm-storе">
+                </label>
+                <label class="booking-form-button">
+                  <button class="negative-button" type="button">
+                    <svg class="negative-button-icon" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                  <button class="plus-button" type="button">
+                    <svg class="plus-button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
                 </label>
               </p>
               <p class="field-group auth-form-user-options">
                 <span class="form-label">
                   <label class="booking-form-input control">
                   <span class="control-label children">Дети:</span>
-                  <button class="negative-button-child" type="button"></button>
-                  <button class="plus-button-child" type="button"></button>
+                  <input class="number-passenger" value="2" type="number" name="firm-storе">
+                  <label class="booking-form-button">
+                    <button class="negative-button-child" type="button">
+                      <svg class="negative-button-icon" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                    <button class="plus-button-child" type="button">
+                      <svg class="plus-button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                  </label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                       <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="white" xmlns="http://www.w3.org/2000/svg">
-                        <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
                         </svg>
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
-                  <input class="number-passenger" value="2" type="number" name="firm-storе">
                 </label>
                 </span>
               </p>
@@ -272,6 +296,7 @@
           </form>
         </section>
       </div>
-    </div>
+      </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
