@@ -1363,6 +1363,14 @@ body{
   z-index: 2;
 }
 
+.hidden{
+  display: none;
+}
+
+.modal-container-close{
+  display: none;
+}
+
 .modal-content{
   display: flex;
   flex-direction: column;
@@ -1370,9 +1378,6 @@ body{
   justify-content: flex-start;
 }
 
-.modal-container-close {
-  display: none;
-}
 
 .modal {
   position: relative;
@@ -1381,7 +1386,6 @@ body{
   border-radius: 30px;
   background-color: #FFFFFF;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-  top: 200px;
 }
 
 .modal-booking{
@@ -1398,9 +1402,6 @@ body{
   width: 52px;
   height: 52px;
   border: none;
-  background-image: url("../images/close-button.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
   cursor: pointer;
   background-color: #F2F2F2;
@@ -1449,39 +1450,28 @@ body{
 .booking-form-field{
   position: relative;
   box-sizing: border-box;
-  width: 440px;
+  min-width: 440px;
   padding: 12px 20px;
   padding-right: 36px;
   border: none;
   background-color: #F2F2F2;
   border-radius: 4px;
+
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
 }
 
-.booking-form-field::before{
+.booking-button-calendar{
   position: absolute;
-  content: "";
+  right: 93px;
   background-image: url(../images/calendar-modal.svg);
   background-repeat: no-repeat;
-  right: 20px;
+  border: none;
   width: 16px;
   height: 15px;
-}
-
-
-.date-input{
-  position: absolute;
-  left: 225px;
-
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.date-input-departure{
-  position: absolute;
-  left: 225px;
-
-  font-weight: 700;
-  line-height: 24px;
+  cursor: pointer;
 }
 
 .field-group{
@@ -1518,11 +1508,6 @@ body{
   margin-right: 46px;
 }
 
-.booking-form-field[type=date]::-webkit-datetime-edit,
-::-webkit-calendar-picker-indicator {
-  opacity: 0;
-}
-
 .number-passenger::-webkit-inner-spin-button{
   appearance: none;
 }
@@ -1543,61 +1528,37 @@ body{
 
 .negative-button{
   position: absolute;
-  content: "";
-  left: 155px;
-  width: 14px;
-  height: 14px;
-  top: 65%;
-  transform: translateY(-50%);
-  background-image: url(../images/negative.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
+  top: 63.5%;
+  left: 30%;
   cursor: pointer;
 }
 
 .plus-button{
   position: absolute;
-  content: "";
-  top: 50%;
-  transform: translateY(-50%);
-  left: 220px;
-  width: 14px;
-  height: 14px;
-  background-image: url(../images/plus.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
+  top: 64%;
+  left: 40%;
   cursor: pointer;
 }
 
 .negative-button-child{
   position: absolute;
-  content: "";
-  left: 150px;
-  width: 14px;
-  height: 14px;
-  top: 65%;
-  transform: translateY(-50%);
-  background-image: url(../images/negative.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
+  top: 31%;
+  left: 57%;
   cursor: pointer;
 }
 
 .plus-button-child{
   position: absolute;
-  content: "";
-  top: 50%;
-  transform: translateY(-50%);
-  left: 215px;
-  width: 14px;
-  height: 14px;
-  background-image: url(../images/plus.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
+  top: 36%;
+  left: 87%;
   cursor: pointer;
 }
 
@@ -1626,6 +1587,7 @@ body{
   border-radius: 26px;
   background-color: #83B3D3;
   border: none;
+  top: 2px;
   right: 230px;
 }
 
@@ -1651,7 +1613,7 @@ body{
   background-color: #333333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
   color: #ffffff;
-  right: 116px;
+  right: 115px;
   z-index: 1;
 }
 
