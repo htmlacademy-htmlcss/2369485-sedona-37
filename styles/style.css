@@ -1409,6 +1409,16 @@ body{
   background-color: #F2F2F2;
 }
 
+.modal-close-button:hover,
+.modal-close-button:focus{
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:active{
+  background-color: #E6E6E6;
+  opacity: 0.3;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1450,6 +1460,15 @@ body{
   text-transform: uppercase;
 }
 
+.booking-form-search:hover,
+.booking-form-search:focus{
+  background-color: #68A2CA;
+}
+
+.booking-form-search:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .booking-form-field{
   position: relative;
   box-sizing: border-box;
@@ -1464,6 +1483,15 @@ body{
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 24px;
+  opacity: 0.6;
+}
+
+.booking-form-field:hover{
+  background-color:  #E6E6E6;
+}
+
+.booking-form-field:focus{
+  opacity: 1;
 }
 
 .booking-button-calendar{
@@ -1471,6 +1499,7 @@ body{
   right: 93px;
   background-image: url(../images/calendar-modal.svg);
   background-repeat: no-repeat;
+  opacity: 0.3;
   background-position: bottom 1px center;
   border: none;
   width: 16px;
@@ -1547,6 +1576,21 @@ body{
   cursor: pointer;
 }
 
+.negative-button:hover path,
+.plus-button:hover path,
+.negative-button:focus path,
+.plus-button:focus path{
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.negative-button:active path,
+.plus-button:active path,
+.negative-button-child:active path,
+.plus-button-child:active path{
+  opacity: 0.3;
+}
+
 .negative-button-child{
   position: absolute;
   border: none;
@@ -1563,6 +1607,14 @@ body{
   top: 4px;
   right: 8px;
   cursor: pointer;
+}
+
+.negative-button-child:hover path,
+.plus-button-child:hover path,
+.negative-button-child:focus path,
+.plus-button-child:focus path{
+  fill: #000000;
+  fill-opacity: 1;
 }
 
 .tooltip {
