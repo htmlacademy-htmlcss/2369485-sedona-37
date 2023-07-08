@@ -655,8 +655,7 @@ body{
   color: #FFFFFF;
 }
 
-.breadcrumbs-list {
-  position: relative;
+.breadcrumbs-list{
   display: flex;
   margin: 0;
   margin-bottom: 40px;
@@ -664,7 +663,9 @@ body{
   list-style: none;
 }
 
+
 .breadcrumbs-link{
+  position: relative;
   display: block;
   margin: 0;
   margin-right: 28.5px;
@@ -691,16 +692,19 @@ body{
   color: (255, 255, 255, 0.3);
 }
 
+/* ::not(:last-child) */
+
 .breadcrumbs-link::after{
   position: absolute;
   background-image: url(../images/breadcrumbs-arrow.svg);
+  background-position: top 5px left 10px;
   background-repeat: no-repeat;
   content: '';
-  left: 23px;
-  top: 13px;
   width: 8px;
   height: 11px;
+  padding: 10px 10px;
 }
+
 
 /* Filter products */
 
@@ -756,14 +760,11 @@ body{
 
 .catalog-filter-item{
   margin-bottom: 16px;
+  color: #FFFFFF;
 }
 
 .catalog-filter-item:last-child{
   margin-bottom: 0;
-}
-
-.infrastructure-item{
-  color: #FFFFFF;
 }
 
 .housing-item{
@@ -1389,16 +1390,17 @@ body{
 }
 
 .modal-booking{
-  width: 717px;
-  padding: 64px 70px;
+  min-width: 717px;
+  min-height: 448px;
+  padding: 55px 70px;
   box-sizing: border-box;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 64px;
-  right: 52px;
+  top: 67px;
+  right: 53px;
   width: 52px;
   height: 52px;
   border: none;
@@ -1410,6 +1412,7 @@ body{
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
+  margin-top: 10px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -1430,7 +1433,7 @@ body{
 }
 
 .booking-form-search{
-  display: block;
+  display: inline-block;
   box-sizing: border-box;
   margin: 0;
   width: 577px;
@@ -1468,6 +1471,7 @@ body{
   right: 93px;
   background-image: url(../images/calendar-modal.svg);
   background-repeat: no-repeat;
+  background-position: bottom 1px center;
   border: none;
   width: 16px;
   height: 15px;
@@ -1486,7 +1490,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 42px;
 }
 
 .number-passenger{
@@ -1503,9 +1507,13 @@ body{
   line-height: 20px;
 }
 
+.input-adults{
+  text-align: center;
+}
+
 .control-label{
   margin: 0;
-  margin-right: 46px;
+  margin-right: 40px;
 }
 
 .number-passenger::-webkit-inner-spin-button{
@@ -1517,30 +1525,25 @@ body{
   padding: 0;
 }
 
-
-.number-adults{
-  position: absolute;
-  top: 50%;
-  left: 190px;
-  transform: translateY(-50%);
-  font-weight: 700;
+.booking-form-button{
+  position: relative;
 }
 
 .negative-button{
   position: absolute;
   border: none;
+  top: -12px;
+  right: 77px;
   background-color: transparent;
-  top: 63.5%;
-  left: 30%;
   cursor: pointer;
 }
 
 .plus-button{
   position: absolute;
   border: none;
+  top: -8px;
+  right: 5px;
   background-color: transparent;
-  top: 64%;
-  left: 40%;
   cursor: pointer;
 }
 
@@ -1548,8 +1551,8 @@ body{
   position: absolute;
   border: none;
   background-color: transparent;
-  top: 31%;
-  left: 57%;
+  top: 0;
+  right: 79px;
   cursor: pointer;
 }
 
@@ -1557,23 +1560,15 @@ body{
   position: absolute;
   border: none;
   background-color: transparent;
-  top: 36%;
-  left: 87%;
+  top: 4px;
+  right: 8px;
   cursor: pointer;
-}
-
-.number-children{
-  position: absolute;
-  top: 50%;
-  left: 185px;
-  transform: translateY(-50%);
-  font-weight: 700;
 }
 
 .tooltip {
   position: absolute;
-  top: 7px;
-  right: -70px;
+  top: 8px;
+  right: -71px;
 }
 
 .tooltip-toggle{
@@ -1587,8 +1582,8 @@ body{
   border-radius: 26px;
   background-color: #83B3D3;
   border: none;
-  top: 2px;
-  right: 230px;
+  top: 1px;
+  right: 229px;
 }
 
 .tooltip-icon {
