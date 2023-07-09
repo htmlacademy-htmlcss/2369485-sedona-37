@@ -145,10 +145,10 @@
                       <div class="range">
                         <div class="range-scale">
                           <div class="range-bar">
-                            <button class="range-toggle toggle-min">
+                            <button type="button" class="range-toggle toggle-min">
                               <span class="visually-hidden">Изменить минимальную цену.</span>
                             </button>
-                            <button class="range-toggle toggle-max">
+                            <button type="button" class="range-toggle toggle-max">
                               <span class="visually-hidden">Изменить максимальную цену.</span>
                             </button>
                           </div>
@@ -434,8 +434,8 @@
       <div class="modal modal-booking modal-container-close">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="black"/>
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="black" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
           </svg>
         </button>
         <section class="modal-content">
@@ -457,7 +457,7 @@
               <p class="field-group auth-form-user-options">
                 <label class="booking-form-input control">
                   <span class="control-label">Взрослые:</span>
-                  <input class="number-passenger" type="number" value="2" name="firm-storе">
+                  <input class="number-passenger input-adults" type="number" value="2" name="firm-storе">
                 </label>
                 <label class="booking-form-button">
                   <button class="negative-button" type="button">
@@ -465,9 +465,11 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                     </svg>
                   </button>
+                </label>
+                <label class="booking-form-button">
                   <button class="plus-button" type="button">
                     <svg class="plus-button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
                     </svg>
                   </button>
                 </label>
@@ -483,6 +485,8 @@
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                       </svg>
                     </button>
+                  </label>
+                  <label class="booking-form-button">
                     <button class="plus-button-child" type="button">
                       <svg class="plus-button-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
