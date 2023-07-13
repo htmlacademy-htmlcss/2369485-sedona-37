@@ -186,7 +186,7 @@ body{
 }
 
 .hero-wrapper{
-  padding: 69px 274.5px;
+  padding: 69px 272px;
 }
 
 .hero-images{
@@ -1391,7 +1391,7 @@ body{
 
 .modal-booking{
   min-width: 717px;
-  min-height: 448px;
+  min-height: 576px;
   padding: 55px 70px;
   box-sizing: border-box;
 }
@@ -1399,7 +1399,7 @@ body{
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 67px;
+  top: 69px;
   right: 53px;
   width: 52px;
   height: 52px;
@@ -1422,7 +1422,7 @@ body{
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -1595,8 +1595,8 @@ body{
   position: absolute;
   border: none;
   background-color: transparent;
-  top: 0;
-  right: 79px;
+  top: -36px;
+  right: -165px;
   cursor: pointer;
 }
 
@@ -1604,8 +1604,8 @@ body{
   position: absolute;
   border: none;
   background-color: transparent;
-  top: 4px;
-  right: 8px;
+  top: -32px;
+  right: -238px;
   cursor: pointer;
 }
 
@@ -1634,7 +1634,7 @@ body{
   border-radius: 26px;
   background-color: #83B3D3;
   border: none;
-  top: 1px;
+  top: -45px;
   right: 229px;
 }
 
@@ -1652,8 +1652,9 @@ body{
 .tooltip-text{
   position: absolute;
   display: none;
-  top: 40px;
+  top: -4px;
   width: 256px;
+  min-height: 143px;
   padding: 15px 18px 18px 22px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -1662,6 +1663,9 @@ body{
   color: #ffffff;
   right: 115px;
   z-index: 1;
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
