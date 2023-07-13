@@ -797,10 +797,6 @@ body{
   opacity: .6;
 }
 
-.control-input:focus + .control-mark {
-  outline: 3px solid #83B3D3;
-}
-
 .control-input:disabled + .control-mark {
   opacity: .3;
 }
@@ -974,12 +970,6 @@ body{
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button-remove:focus{
-  outline-style: solid;
-  outline-color: #83B3D3;
-  outline-width: 3px;
-}
-
 .button-remove:active{
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1042,12 +1032,6 @@ body{
   border: 2px solid #68A2CA;
 }
 
-.select-control:focus{
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: #68A2CA;
-}
-
 .select-control:disabled{
   color: rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(0, 0, 0, 0.3);
@@ -1082,14 +1066,6 @@ body{
 .button-list:active,
 .button-single:active{
   border: 2px solid #000000;
-}
-
-.button-grid:focus,
-.button-list:focus,
-.button-single:focus{
-  outline-color: #68A2CA;
-  outline-style: solid;
-  outline-width: 2px;
 }
 
 .button-list {
