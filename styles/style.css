@@ -1302,11 +1302,12 @@ body{
 }
 
 .show-all-pages {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #000000;
+  margin-left: -2px;
 }
 .subscribe-catalog{
   padding: 96px 258px 104px 258px;
