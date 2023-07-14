@@ -234,6 +234,7 @@ body{
 /* Advantages */
 
 .advantages-subtitle{
+  position: relative;
   width: 172px;
   margin: 0 auto 62px auto;
   font-size: 24px;
@@ -255,17 +256,16 @@ body{
 }
 
 .advantages-text-wrapp{
-  position: relative;
   width: 400px;
   padding: 102px 85px;
   background-color: #82B3D3;
 }
 
-.advantages-text-wrapp::after{
+.advantages-subtitle::after{
   position: absolute;
   content: '';
-  top: 188px;
-  left: 170px;
+  left: 56px;
+  bottom: -30px;
   width: 60px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -279,23 +279,23 @@ body{
 }
 
 .advantages-item{
-  position: relative;
   width: 230px;
   padding: 112.5px 85px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item::after{
+.advantages-subtitle-detail::after{
   position: absolute;
   content: '';
-  top: 199px;
-  left: 170px;
+  bottom: -30px;
+  left: 58px;
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);;
 }
 
 .advantages-subtitle-detail{
+  position: relative;
   width: 175px;
   margin: 0 auto 62px auto;
   font-size: 24px;
@@ -692,7 +692,9 @@ body{
   color: (255, 255, 255, 0.3);
 }
 
-/* ::not(:last-child) */
+.breadcrumbs-item:last-child .breadcrumbs-link::after{
+  display: none;
+}
 
 .breadcrumbs-link::after{
   position: absolute;
@@ -1522,8 +1524,13 @@ body{
   margin-right: 40px;
 }
 
-.number-passenger::-webkit-inner-spin-button{
-  appearance: none;
+.number-passenger::-webkit-inner-spin-button,
+.number-passenger::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+}
+
+.number-passenger[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .booking-form-input{
