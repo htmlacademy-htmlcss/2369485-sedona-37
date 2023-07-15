@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" sizes="16x16" href="favicon.ico">
+    <link rel="icon" sizes="32x32" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
     <title>Отдых в Седоне</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="main-logo" href="#">
           <img src="images/navigation/logo.svg" width="140" height="70" alt="Логотип сайта в начале страницы">
@@ -51,14 +52,14 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="booking-hotel">
+        <a class="booking-hotel" href="#">
           Хочу сюда!
         </a>
       </nav>
     </header>
-    <main class="main-container main-index">
+    <main class="main-container main-index" data-test="main">
       <div class="page-container">
-        <section class="hero">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">
             Отдых в Седоне
           </h1>
@@ -66,7 +67,7 @@
             <img class="hero-images" src="images/welcome-sedona-hero.svg" width="457" height="352" alt="Добро пожаловать в великолепную Седону, 'Потому что Гранд-Каньон отстой!'">
           </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="hero-wrapper">
             <h2 class="hero-subtitle">
               Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
@@ -118,7 +119,7 @@
             </div>
           </div>
         </section>
-        <section class="additional-advantages">
+        <section class="additional-advantages" data-test="service">
           <div class="advantages-hero-wrapper">
             <h2 class="additional-advantages-title">
               Приезжайте в Седону отдохнуть в комфорте и уюте!
@@ -149,7 +150,7 @@
             </li>
           </ul>
         </section>
-        <section class="search-hotel">
+        <section class="search-hotel" data-test="search">
           <div class="search-hotel-container">
             <h2 class="search-hotel-title">
               Заинтересовались?
@@ -158,12 +159,12 @@
               Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
               предложения гостиниц в Седоне
             </p>
-            <button class="search-hotel-btn">
+            <button class="search-hotel-btn" type="button">
               ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
             </button>
           </div>
         </section>
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <div class="subscribe-container">
             <h2 class="subscribe-title">
               Подпишитесь на рассылку
@@ -179,7 +180,7 @@
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="page-footer-container">
         <h2 class="visually-hidden">
           Контактная информация
@@ -227,31 +228,43 @@
     </footer>
     <div class="modal-container hidden">
       <div class="modal modal-booking modal-container-close">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">
+            Закрыть
+          </span>
           <svg width="15" height="15" viewBox="0 0 15 15" fill="black" xmlns="http://www.w3.org/2000/svg">
           <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
           </svg>
         </button>
         <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <h2 class="modal-title">
+            Поиск гостиницы в Седоне
+          </h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group thr">
-              <label class="subtitle-booking-check" for="booking-check">Дата заезда:</label>
+              <label class="subtitle-booking-check" for="booking-check">
+                Дата заезда:
+              </label>
               <input class="booking-form-field field" value="27 апреля 2020" type="text" id="booking-check" name="booking-check">
               <button class="booking-button-calendar" type="button"></button>
             </p>
-            <span class="error-date">Мы не можем отправить вас в прошлое.</span>
+            <span class="error-date">
+              Мы не можем отправить вас в прошлое.
+            </span>
             <p class="field-group">
                 <label class="subtitle-booking-check" for="booking-departure">Дата выезда:</label>
               <input class="booking-form-field" value="1 сентября 2023" type="text" id="booking-departure" name="booking-departure">
               <button class="booking-button-calendar" type="button"></button>
             </p>
-            <span class="free-room">На эти даты есть свободные номера. Пока есть.</span>
+            <span class="free-room">
+              На эти даты есть свободные номера. Пока есть.
+            </span>
             <div class="number-booking-wrapp">
               <div class="field-group auth-form-user-options">
                 <label class="booking-form-input control">
-                  <span class="control-label">Взрослые:</span>
+                  <span class="control-label">
+                    Взрослые:
+                  </span>
                   <input class="number-passenger input-adults" type="number" value="2" name="firm-storе">
                 </label>
                 <div class="booking-form-button">
@@ -296,13 +309,17 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
                           </svg>
                         </button>
-                        <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                          Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                        </span>
                     </span>
                   </label>
                   </div>
               </div>
            </div>
-            <a class="booking-form-search" href="#">Найти</a>
+            <a class="booking-form-search" href="#">
+              Найти
+            </a>
           </form>
         </section>
       </div>
