@@ -69,7 +69,7 @@
         <section class="advantages">
           <div class="hero-wrapper">
             <h2 class="hero-subtitle">
-              Седона — небольшой городок в Аризоне, заслуживающий большего!
+              Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
             </h2>
             <p class="hero-description">
               Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
@@ -82,7 +82,9 @@
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
-            <img src="images/advanteges/advantages-gallery-1.jpg" width="800" height="385" alt="Улица Седоны">
+              <div class="advanteges-img">
+                <img class="advantages-images" src="images/advanteges/advantages-gallery-1.jpg" width="800" height="385" alt="Улица Седоны">
+              </div>
           </div>
           <ul class="advantages-list">
             <li class="advantages-item">
@@ -105,7 +107,9 @@
             </li>
           </ul>
           <div class="advantages-content-container">
-            <img src="images/advanteges/advantages-gallery-2.jpg" width="800" height="385" alt="Мост Дьявола">
+            <div class="advanteges-img">
+              <img class="advantages-images" src="images/advanteges/advantages-gallery-2.jpg" width="800" height="385" alt="Мост Дьявола">
+            </div>
             <div class="advantages-text-wrapp">
               <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
               <p class="advantages-description">
@@ -124,21 +128,21 @@
             </p>
           </div>
           <ul class="additional-advantages-list">
-            <li class="additional-advantages-item">
-              <h3 class="additional-advantages-subtitle housing">Жильё</h3>
+            <li class="additional-advantages-item housing">
+              <h3 class="additional-advantages-subtitle">Жильё</h3>
               <p class="additional-advantage-item-desc">
                 Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в кино!
               </p>
             </li>
-            <li class="additional-advantages-item differ">
-              <h3 class="additional-advantages-subtitle food">Еда</h3>
+            <li class="additional-advantages-item differ food">
+              <h3 class="additional-advantages-subtitle">Еда</h3>
               <p class="additional-advantage-item-desc">
                 Всегда заказывайте<br>топовый фирменный бургер, вы не
                 разочаруетесь!
               </p>
             </li>
-            <li class="additional-advantages-item">
-              <h3 class="additional-advantages-subtitle souvenirs">Сувениры</h3>
+            <li class="additional-advantages-item souvenirs">
+              <h3 class="additional-advantages-subtitle">Сувениры</h3>
               <p class="additional-advantage-item-desc">
                 Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!
               </p>
@@ -165,7 +169,7 @@
               Подпишитесь на рассылку
             </h2>
             <p class="subscribe-description">
-              Только полезная информация и никакого спама, честное бойскаутское!
+              Только полезная информация и никакого спама,<br> честное бойскаутское!
             </p>
             <form class="mail" action="https://echo.htmlacademy.ru/" method="get">
               <input class="input-mail" name="subscribe-mail" type="email" placeholder="Ваш e-mail">
@@ -270,6 +274,7 @@
                   <label class="booking-form-input control">
                   <span class="control-label children">Дети:</span>
                   <input class="number-passenger" value="2" type="number" name="firm-storе">
+                  </label>
                   <label class="booking-form-button">
                     <button class="negative-button-child" type="button">
                       <svg class="negative-button-icon" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -284,16 +289,17 @@
                       </svg>
                     </button>
                   </label>
-                  <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                      <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="white" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
-                        </svg>
-                    </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  <label class="booking-form-input control">
+                    <span class="tooltip">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                          <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
+                          </svg>
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </label>
                   </span>
-                </label>
-                </span>
               </p>
            </div>
             <a class="booking-form-search" href="#">Найти</a>
