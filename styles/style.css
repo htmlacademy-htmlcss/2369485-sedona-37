@@ -254,6 +254,7 @@ body {
 .advanteges-images-wrapper {
   position: relative;
   object-fit: cover;
+  overflow: hidden;
   width: 800px;
   padding: 0;
   margin: 0;
@@ -265,6 +266,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   height: 100%;
+  width: auto;
 }
 
 .advantages-content-container {
@@ -291,6 +293,7 @@ body {
 
 .advantages-list  {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -336,7 +339,7 @@ body {
 /* Additional-advantages */
 
 .advantages-hero-wrapper  {
-  padding: 64px 347.5px;
+  padding: 64px 100px;
 }
 
 .additional-advantages-title  {
@@ -358,13 +361,10 @@ body {
 
 .additional-advantages-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.additional-advantages-item {
-  position: relative;
 }
 
 .housing::before  {
@@ -394,7 +394,7 @@ body {
 .souvenirs::before  {
   position: absolute;
   content: "";
-  top: 80px;
+  top: 79px;
   left: 169px;
   background-image: url("../images/advanteges/advantage-icon-box.svg");
   background-repeat: no-repeat;
@@ -406,8 +406,9 @@ body {
 
 .additional-advantages-item {
   position: relative;
-  width: 400px;
-  padding: 152px 83px 60px 86px;
+  min-width: 228px;
+  box-sizing: border-box;
+  padding: 154px 86px 60px 86px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -416,6 +417,7 @@ body {
 }
 
 .additional-advantages-subtitle {
+  display: block;
   margin: 30px auto;
   font-size: 24px;
   line-height: 28px;
@@ -533,7 +535,7 @@ body {
 }
 
 .input-mail {
-  width: 410px;
+  min-width: 410px;
   margin: 0;
   padding: 23px 22px 16px 20px;
   background: #F2F2F2;
