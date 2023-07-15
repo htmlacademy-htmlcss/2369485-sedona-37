@@ -1422,7 +1422,7 @@ body{
 }
 
 .modal-booking{
-  min-width: 717px;
+  width: 717px;
   min-height: 576px;
   padding: 52px 70px;
   box-sizing: border-box;
@@ -1541,6 +1541,7 @@ body{
 
 .field-group{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0;
