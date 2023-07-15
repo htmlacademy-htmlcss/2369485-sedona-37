@@ -144,11 +144,13 @@ body{
 .navigation-link-current{
   position: relative;
   z-index: 1;
-  text-decoration: underline;
+  top: 1px;
+  border-bottom: 2px solid #756257;
+  /* text-decoration: underline;
   text-decoration-color: #756257;
   text-underline-position: under;
   text-decoration-thickness: 2px;
-  text-underline-offset: 19.5px;
+  text-underline-offset: 19.5px; */
 }
 
 .booking-hotel{
@@ -198,6 +200,7 @@ body{
 .hero-images-wrapp{
   position: relative;
   background-image: url(../images/background/index-background.jpg);
+  background-color: #5986B0;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 485px;
@@ -495,6 +498,7 @@ body{
 
 .subscribe{
   background-image: url(../images/subscribe-background.jpg);
+  background-color: #477DA9;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -664,6 +668,7 @@ body{
 .filter-background-wrapp{
   padding: 35px 70px 70px 70px;
   background-image: url(../images/background/filter-background.jpg);
+  background-color: #6587AD;
   background-repeat: no-repeat;
   background-size: cover;
 }
