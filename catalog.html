@@ -16,7 +16,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="main-logo" href="index.html">
-          <img src="images/navigation/logo.svg" width="140" height="70" alt="Логотип сайта в начале страницы">
+          <img src="images/navigation/logo.svg" width="140" height="70" alt="Логотип сайта в начале страницы.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-list-item">
@@ -201,8 +201,12 @@
               </div>
               <div class="cost-filter-wrapper">
                 <div class="submit-buttons-wrapper">
-                  <input class="button-apply" type="submit" value="Применить">
-                  <input class="button-remove" type="reset" value="Сбросить">
+                  <button class="button-apply" type="submit">
+                    Применить
+                  </button>
+                  <button class="button-remove" type="reset">
+                    Сбросить
+                  </button>
                 </div>
               </div>
             </form>
@@ -245,7 +249,7 @@
           <ul class="product-list">
             <li class="product-card">
               <a class="product-link" href="#">
-                <img class="product-card-image" src="images/cards-hotel/hotel-directory-1.jpg" width="300" height="212" alt="Ущелье">
+                <img class="product-card-image" src="images/cards-hotel/hotel-directory-1.jpg" width="300" height="212" alt="Ущелье.">
                 <h3 class="product-card-title">
                   Amara Resort & Spa
                 </h3>
@@ -267,7 +271,7 @@
                 </button>
               </div>
               <div class="wrapper">
-                <img src="images/rating/rating-star-4.svg" width="90" height="17" alt="Рейтинг гостиницы четыри звезды">
+                <img src="images/rating/rating-star-4.svg" width="90" height="17" alt="Рейтинг гостиницы четыри звезды.">
                 <span class="product-card-rating">
                   Рейтинг: 8,5
                 </span>
@@ -275,8 +279,7 @@
             </li>
             <li class="product-card">
               <a class="product-link" href="#">
-                <img class="product-card-image" src="images/cards-hotel/hotel-directory-2.jpg" width="300" height="212"
-                  alt="Гора позади, которой радуга">
+                <img class="product-card-image" src="images/cards-hotel/hotel-directory-2.jpg" width="300" height="212" alt="Гора позади, которой радуга.">
                 <h3 class="product-card-title">
                   Villas at Poco Diablo
                 </h3>
@@ -298,7 +301,7 @@
                 </button>
               </div>
               <div class="wrapper">
-                <img src="images/rating/rating-star-4.svg" width="90" height="17" alt="Рейтинг гостиницы четыри звезды">
+                <img src="images/rating/rating-star-4.svg" width="90" height="17" alt="Рейтинг гостиницы четыри звезды.">
                 <span class="product-card-rating">
                   Рейтинг: 9,2
                 </span>
@@ -307,7 +310,7 @@
             <li class="product-card">
               <a class="product-link" href="#">
                 <img class="product-card-image" src="images/cards-hotel/hotel-directory-3.jpg" width="300" height="212"
-                  alt="Гора впереди которой лес, а позади чистое небо">
+                  alt="Гора впереди которой лес, а позади чистое небо.">
                 <h3 class="product-card-title">
                   Desert Quail Inn
                 </h3>
@@ -329,7 +332,7 @@
                 </button>
               </div>
               <div class="wrapper">
-                <img src="images/rating/rating-star-3.svg" width="66" height="17" alt="Рейтинг гостиницы три звезды">
+                <img src="images/rating/rating-star-3.svg" width="66" height="17" alt="Рейтинг гостиницы три звезды.">
                 <span class="product-card-rating">
                   Рейтинг: 6,9
                 </span>
@@ -338,7 +341,7 @@
             <li class="product-card">
               <a class="product-link" href="#">
                 <img class="product-card-image" src="images/cards-hotel/hotel-directory-4.jpg" width="300" height="212"
-                  alt="Гора на фоне, которой звездное небо">
+                  alt="Гора на фоне, которой звездное небо.">
                 <h3 class="product-card-title">
                   GreenTree Inn
                 </h3>
@@ -360,7 +363,7 @@
                 </button>
               </div>
               <div class="wrapper">
-                <img src="images/rating/rating-star-2.svg" width="42" height="17" alt="Рейтинг гостиницы две звезды">
+                <img src="images/rating/rating-star-2.svg" width="42" height="17" alt="Рейтинг гостиницы две звезды.">
                 <span class="product-card-rating">
                   Рейтинг: 5,0
                 </span>
@@ -411,8 +414,10 @@
             Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
           <form class="mail" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="input-mail" name="subscribe-mail" type="email" placeholder="Ваш e-mail">
-            <input class="button-mail" type="submit" value="Подписаться">
+            <input class="input-mail" name="subscribe-mail" type="email" placeholder="Ваш e-mail" required>
+            <button class="button-mail" type="submit">
+              Подписаться
+            </button>
           </form>
         </section>
       </div>
@@ -489,8 +494,10 @@
               Мы не можем отправить вас в прошлое.
             </span>
             <p class="field-group">
-                <label class="subtitle-booking-check" for="booking-departure">Дата выезда:</label>
-              <input class="booking-form-field" value="1 сентября 2023" type="text" id="booking-departure" name="booking-departure">
+              <label class="subtitle-booking-check" for="booking-departure">
+                Дата выезда:
+              </label>
+              <input class="booking-form-field" value="1 сентября 2023" type="text" id="booking-departure" name="booking-departure" required>
               <button class="booking-button-calendar" type="button"></button>
             </p>
             <span class="free-room">
@@ -502,7 +509,7 @@
                   <span class="control-label">
                     Взрослые:
                   </span>
-                  <input class="number-passenger input-adults" type="number" value="2" name="firm-storе">
+                  <input class="number-passenger input-adults" type="number" value="2" name="firm-storе" required>
                 </label>
                 <div class="booking-form-button">
                   <button class="negative-button" type="button">
@@ -554,9 +561,9 @@
                   </div>
               </div>
            </div>
-            <a class="booking-form-search" href="#">
-              Найти
-            </a>
+            <button class="booking-form-search" type="submit">
+            Найти
+            </button>
           </form>
         </section>
       </div>

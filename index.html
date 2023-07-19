@@ -16,7 +16,7 @@
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="main-logo" href="#">
-          <img src="images/navigation/logo.svg" width="140" height="70" alt="Логотип сайта в начале страницы">
+          <img src="images/navigation/logo.svg" width="140" height="70" alt="Логотип сайта в начале страницы.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-list-item">
@@ -64,7 +64,7 @@
             Отдых в Седоне
           </h1>
           <div class="hero-images-wrapp">
-            <img class="hero-images" src="images/welcome-sedona-hero.svg" width="457" height="352" alt="Добро пожаловать в великолепную Седону, 'Потому что Гранд-Каньон отстой!'">
+            <img class="hero-images" src="images/welcome-sedona-hero.svg" width="457" height="352" alt="Добро пожаловать в великолепную Седону, 'Потому что Гранд-Каньон отстой!'.">
           </div>
         </section>
         <section class="advantages" data-test="advantages">
@@ -84,7 +84,7 @@
               </p>
             </div>
               <div class="advanteges-images-wrapper">
-                <img class="advantages-images" src="images/advanteges/advantages-gallery-1.jpg" width="800" height="385" alt="Улица Седоны">
+                <img class="advantages-images" src="images/advanteges/advantages-gallery-1.jpg" width="800" height="385" alt="Улица Седоны.">
               </div>
           </div>
           <ul class="advantages-list">
@@ -109,7 +109,7 @@
           </ul>
           <div class="advantages-content-container">
             <div class="advanteges-images-wrapper">
-              <img class="advantages-images" src="images/advanteges/advantages-gallery-2.jpg" width="800" height="385" alt="Мост Дьявола">
+              <img class="advantages-images" src="images/advanteges/advantages-gallery-2.jpg" width="800" height="385" alt="Мост Дьявола.">
             </div>
             <div class="advantages-text-wrapp">
               <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
@@ -122,7 +122,7 @@
         <section class="additional-advantages" data-test="service">
           <div class="advantages-hero-wrapper">
             <h2 class="additional-advantages-title">
-              Приезжайте в Седону отдохнуть в комфорте и уюте!
+              Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
             </h2>
             <p class="additional-advantages-desctiption">
               Опытный персонал и качественное обслуживание!
@@ -173,8 +173,10 @@
               Только полезная информация и никакого спама,<br> честное бойскаутское!
             </p>
             <form class="mail" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="input-mail" name="subscribe-mail" type="email" placeholder="Ваш e-mail">
-              <input class="button-mail" type="submit" value="Подписаться">
+              <input class="input-mail" name="subscribe-mail" type="email" placeholder="Ваш e-mail" required>
+              <button class="button-mail" type="submit">
+                Подписаться
+              </button>
             </form>
           </div>
         </section>
@@ -245,7 +247,7 @@
               <label class="subtitle-booking-check" for="booking-check">
                 Дата заезда:
               </label>
-              <input class="booking-form-field field" value="27 апреля 2020" type="text" id="booking-check" name="booking-check">
+              <input class="booking-form-field field" value="27 апреля 2020" type="text" id="booking-check" name="booking-check" required>
               <button class="booking-button-calendar" type="button"></button>
             </p>
             <span class="error-date">
@@ -253,7 +255,7 @@
             </span>
             <p class="field-group">
                 <label class="subtitle-booking-check" for="booking-departure">Дата выезда:</label>
-              <input class="booking-form-field" value="1 сентября 2023" type="text" id="booking-departure" name="booking-departure">
+              <input class="booking-form-field" value="1 сентября 2023" type="text" id="booking-departure" name="booking-departure" required>
               <button class="booking-button-calendar" type="button"></button>
             </p>
             <span class="free-room">
@@ -317,9 +319,9 @@
                   </div>
               </div>
            </div>
-            <a class="booking-form-search" href="#">
+           <button class="booking-form-search" type="submit">
               Найти
-            </a>
+           </button>
           </form>
         </section>
       </div>
