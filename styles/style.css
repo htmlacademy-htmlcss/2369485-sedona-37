@@ -764,6 +764,7 @@ body {
 .catalog-filter {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 1060px;
 }
@@ -791,6 +792,7 @@ body {
 
 .cost-filter-wrapper  {
   align-self: start;
+  max-width: 191px;
 }
 
 .submit-buttons-wrapper {
@@ -809,6 +811,7 @@ body {
 
 .catalog-filter-group:last-child  {
   margin-right: 0;
+  width: 290px;
 }
 
 .catalog-filter-list  {
