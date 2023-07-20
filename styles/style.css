@@ -112,9 +112,16 @@ body {
   padding: 22px 12px;
 }
 
-.search-navigation-link path:hover,
-.favorite-navigation-link path:hover{
-  fill: red;
+.search-navigation-link:hover path,
+.favorite-navigation-link:hover path,
+.search-navigation-link:focus path,
+.favorite-navigation-link:focus path  {
+  fill-opacity: 0.6;
+}
+
+.search-navigation-link:active path,
+.favorite-navigation-link:active path {
+  fill: #f85858;
 }
 
 .number-favorites {
