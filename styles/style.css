@@ -1524,6 +1524,7 @@ body {
 .booking-form-search  {
   display: inline-block;
   box-sizing: border-box;
+  border: none;
   margin: 0;
   width: 577px;
   padding: 18px 77px;
